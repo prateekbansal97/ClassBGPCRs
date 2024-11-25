@@ -60,7 +60,7 @@ class VAMPScoreAnalysis:
             return None
 
         other_proteins = [prot for prot in self.proteins if prot != sys]
-        print(sys, other_proteins)
+        #print(sys, other_proteins)
         vamp_scores = {prot: {ct: [] for ct in self.cutoffs} for prot in self.proteins}
 
         for ct in self.cutoffs:
